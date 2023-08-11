@@ -1,19 +1,30 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/-Un0hjO8)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=11542742)
-# Project name
+
+# TDD - Test-Driven Development Project
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project demonstrates Test-Driven Development (TDD) principles by creating a weather service application that fetches weather data using an external API. The main goal is to practice writing robust tests for individual classes, such as the `WeatherService` class, using JUnit and Mockito for mock objects. Additionally, this project aims to provide insights into creating effective test reports and understanding the benefits of TDD and mock objects.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+### Motivation
 
-## Table of Contents (Optional)
+The motivation behind this project is to gain hands-on experience in implementing TDD methodologies and writing comprehensive test cases. By following TDD practices, we ensure that the code meets its requirements and functions as expected. This project also provides an opportunity to understand the importance of isolating components for testing using mock objects.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+### Problem Solving
+
+The project addresses the challenge of testing a weather service application that relies on an external API. By creating mock objects, we can simulate the behavior of the external API and verify the correct functionality of the `WeatherService` class. This allows us to identify and fix issues early in the development process, ensuring a more reliable and robust application.
+
+### Learning Objectives
+
+Through this project, we aim to achieve the following learning objectives:
+
+- Implement TDD methodologies by writing tests before the actual code.
+- Create comprehensive JUnit test cases to validate the functionality of the `WeatherService` class.
+- Utilize mock objects (using Mockito) to simulate interactions with external dependencies.
+- Gain insights into writing effective test reports that provide clear information about test cases and their outcomes.
+- Understand the benefits of TDD in terms of code quality, early issue detection, and improved development workflow.
+- Explore the concept of isolating components for testing using mock objects and its relevance in real-world applications.
+
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,51 +33,55 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To set up and run the project locally, follow these steps:
+
+1. Clone the repository: [Project Repository Link]([https://github.com/yourusername/your-repo-name](https://github.com/Campus-Molndal-JIN23/tdd-och-mock-Abukar-Abdale.git))
+2. Navigate to the project directory using a terminal.
+3. Ensure you have Java and Maven installed on your system.
+4. Build the project using the following command:
+   ```sh
+   mvn clean install
+   ```
+5. Run the tests to verify the functionality:
+   ```sh
+   mvn test
+   ```
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The WeatherService class provides a method to retrieve weather data for a specified city. To use the WeatherService class, follow these steps:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+1. Create an instance of the WeatherService class, passing a mock instance of the WeatherAPI class as a parameter.
+2. Call the `getWeather` method on the WeatherService instance, providing the name of the city for which you want to fetch weather data.
+3. The method will return a WeatherData object containing the temperature, wind speed, cloud coverage, city name, and country code.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Here's an example of how to use the WeatherService class:
+
+```java
+WeatherAPI mockWeatherAPI = mock(WeatherAPI.class);
+WeatherService weatherService = new WeatherService(mockWeatherAPI);
+
+WeatherData weatherData = weatherService.getWeather("Gothenburg");
+
+System.out.println("Temperature: " + weatherData.getTemperature() + "°C");
+System.out.println("Wind Speed: " + weatherData.getWindSpeed() + " m/s");
+System.out.println("Cloud Coverage: " + weatherData.getClouds() + "%");
+System.out.println("City: " + weatherData.getCity());
+System.out.println("Country: " + weatherData.getCountry());
+```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-* [member 1](https://github.com/person1)
-* [member 2](https://github.com/person1)
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-* [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
-
-If you followed tutorials, include links to those here as well.
+- [Me](https://github.com/Abukar-Abdale)
+- [Teacher](https://github.com/marcusjobb)
+- [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [MIT License](https://choosealicense.com/licenses/mit/).
+[MIT License](https://choosealicense.com/licenses/mit/).
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+![Java](https://img.shields.io/badge/Java-%3E%3D%2019-brightgreen.svg).
