@@ -86,7 +86,7 @@ System.out.println("Country: " + weatherData.getCountry());
 
 ![Java](https://img.shields.io/badge/Java-%3E%3D%2019-brightgreen.svg)
 
-![Last Commit](https://img.shields.io/github/last-commit/Abukar-Abdale/tdd-och-mock-Abukar-Abdale)
+
 
 
 
