@@ -84,7 +84,4 @@ System.out.println("Country: " + weatherData.getCountry());
 
 ## Badges
 
-![Java](https://img.shields.io/badge/Java-%3E%3D%2019-brightgreen.svg)
-```
-
-Make sure to replace placeholders like `[yourusername]` and `[your-repo-name]` with actual values from your repository. This revised version organizes and cleans up your README, making it more readable and informative.
+![Java](https://img.shields.io/badge/Java-%3E%3D%2019-brightgreen.svg).
