@@ -82,12 +82,12 @@ System.out.println("Country: " + weatherData.getCountry());
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-[![Top Language](https://img.shields.io/github/languages/top/Abukar-Abdale/your-repo-name)](https://github.com/Abukar-Abdale/your-repo-name)
+![Java](https://img.shields.io/badge/Java-%3E%3D%2019-brightgreen.svg)
+
+![Last Commit](https://img.shields.io/github/last-commit/Abukar-Abdale/your-repo-name)
+
 
 
 
