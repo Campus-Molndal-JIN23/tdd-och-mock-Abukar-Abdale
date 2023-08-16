@@ -63,7 +63,8 @@ Skriv en detaljerad testrapport baserat på testfallen och deras resultat.
 
 
 #### Diagram.
-![Diagram](tdd-och-mock-Abukar-Abdale/pic/diagram.png)
+![Diagram](pic/diagram.png)
+
 
 
 
