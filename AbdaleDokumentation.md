@@ -63,7 +63,8 @@ Skriv en detaljerad testrapport baserat på testfallen och deras resultat.
 
 
 #### Diagram.
-![Diagram](pic/diagram.png)
+![Diagram](tdd-och-mock-Abukar-Abdale/pic/diagram.png)
+
 
 
 ### Project och projekthantering enligt Scrum/Kanban
